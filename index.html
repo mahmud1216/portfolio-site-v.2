@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Practic Site</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-extensions.css">
+		<link rel="stylesheet" href="css/all.min.css">
+		<link rel="icon" href="./images/favicon.ico">
+
+		<style>
+
+			section{
+				padding-top: 100px;
+				padding-bottom: 75px;
+			}
+
+			#mainNav .active{
+				--bs-bg-opacity: 1;
+				background-color: rgba(var(--bs-warning-rgb),var(--bs-bg-opacity))!important;
+			}
+
+			#service .card:hover{
+				background-color:#0d6efd!important;
+			}
+
+			#socialLink a{
+				height: 2.75rem;
+				width: 2.75rem;
+			}
+
+			[id*="-error"]{
+				color: rgb(174, 0, 0);
+				float: left;
+				margin-top: -10px;
+			}
+
+			@media(max-width:576px){
+				#home p{
+					font-size: .5rem;
+				}
+				#home h6{
+					font-size: .75rem;
+				}
+				#home h1{
+					font-size: 1rem;
+				}
+			}
+
+		</style>
+	
+	
+	</head>
+
+	<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="600">
+
+		<header>
+			<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+				<div class="container-lg">
+				<a class="navbar-brand d-flex align-items-center" href="#">
+					<img class="me-2" src="./images/MN Traders.png" alt="Company Logo">
+					<h2 class="mb-0 text-warning d-none d-sm-block ">Mahmud</h2>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav gap-1 ms-auto mb-2 mb-lg-0 text-uppercase text-white" id="mainNav">
+					<li class="nav-item">
+						<a class="nav-link px-3 py-2 rounded active" aria-current="page" href="#home">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link px-3 py-2 rounded" aria-current="page" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link px-3 py-2 rounded" aria-current="page" href="#service">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link px-3 py-2 rounded" aria-current="page" href="#project">Project</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link px-3 py-2 rounded" aria-current="page" href="#contact">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link btn btn-primary px-3 py-2 text-white" href="#login">Login</a>
+					</li>
+					</ul>	
+				</div>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<!-------------- Slider Part -------------->
+		
+			<section id="home" class="pb-0 bg-no-repeat bg-size-cover bg-position-center" style="background-image:url(images/1.jpg)">
+				<div class="container-lg">
+					<div class="row align-items-center">
+						<div class="col-6 text-warning text-uppercase py-5 py-md-0">
+							<p class="mt-5 mt-sm-0 mb-0 mb-md-3 pt-3 pt-sm-0 mb-1">Introduction</p>
+							<h6 class="text-white">Hello, My Name is MD. Mahmud Hassan</h6>
+							<h1 class="">I'M A Web Developer</h1>
+							<button class="btn btn-light btn-sm px-sm-3 mb-0 mb-md-3 rounded-pill" style="color: #0ad9d9; background-color: white;">My Work</button>
+							<button class="btn btn-primary btn-sm px-sm-3 mb-0 mb-md-3 rounded-pill">Hire Me</button>
+						</div>
+						<div class="col-6 text-end">
+							<img class="img-fluid" src="./images/4.1.png" alt="Mahmud Pic">
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-------------- About Me Part -------------->
+			<section id="about">
+				<div class="container-lg text-center">
+					<!-------------- About Me Content -------------->
+					<div>
+						<h6 class="text-primary text-uppercase mb-0">ABOUT ME</h6>
+						<h1 class="text-uppercase">Welcome to my Website</h1>
+						<p style="margin-top: 50px;margin-bottom: 75px; font-size: 1rem;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					</div>
+
+					<div class="row text-start gy-4">
+						<div class="col-sm-6 col-md-4">
+							<h6 class="text-uppercase">Web Design</h6>
+							<div class="progress" style="height: .5rem;">
+								<div class="progress-bar progress-bar-striped progress-bar-animated rounded-pill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<h6 class="text-uppercase">Php Development</h6>
+							<div class="progress" style="height: .5rem;">
+								<div class="progress-bar progress-bar-striped progress-bar-animated rounded-pill bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 35%"></div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<h6 class="text-uppercase">Photography</h6>
+							<div class="progress" style="height: .5rem;">
+								<div class="progress-bar progress-bar-striped progress-bar-animated rounded-pill bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<h6 class="text-uppercase">Branding</h6>
+							<div class="progress" style="height: .5rem;">
+								<div class="progress-bar progress-bar-striped progress-bar-animated rounded-pill bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<h6 class="text-uppercase">Marketing</h6>
+							<div class="progress" style="height: .5rem;">
+								<div class="progress-bar progress-bar-striped progress-bar-animated rounded-pill bg-secondary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<h6 class="text-uppercase">SEO</h6>
+							<div class="progress" style="height: .5rem;">
+								<div class="progress-bar progress-bar-striped progress-bar-animated rounded-pill bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</section>
+			<!-------------- Services Part -------------->
+			<section id="service" class="bg-no-repeat bg-size-cover bg-position-center" style="background-image:url(images/6.jpg)">
+				<div class="container-lg text-center">
+					<h6 class="text-primary text-uppercase mb-0">My Services</h6>
+					<h1 class="text-uppercase text-white mb-5">What I Do</h1>
+					<div class="row g-2 text-white">
+						<div class="col-sm-6 col-md-4">
+							<div class="card p-5 bg-secondary bg-opacity-30 hover-bg-primary h-100">
+								<h2 class="mb-3 text-warning">
+									<i class="fa-solid fa-list"></i>
+								</h2>
+								<h5 class="text-uppercase mb-4">Professional Code</h5>
+								<p class="px-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="card p-5 bg-secondary bg-opacity-30 hover-bg-primary h-100">
+								<h2 class="mb-3 text-warning">
+									<i class="fa-regular fa-lightbulb"></i>
+								</h2>
+								<h5 class="text-uppercase mb-4">Creative Ideas</h5>
+								<p class="px-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="card p-5 bg-secondary bg-opacity-30 hover-bg-primary h-100">
+								<h2 class="mb-3 text-warning">
+									<i class="fa-regular fa-clone"></i>
+								</h2>
+								<h5 class="text-uppercase mb-4">SEO & Marketing</h5>
+								<p class="px-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="card p-5 bg-secondary bg-opacity-30 hover-bg-primary h-100">
+								<h2 class="mb-3 text-warning">
+									<i class="fa-regular fa-heart"></i>
+								</h2>
+								<h5 class="text-uppercase mb-4">User Friendly</h5>
+								<p class="px-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="card p-5 bg-secondary bg-opacity-30 hover-bg-primary h-100">
+								<h2 class="mb-3 text-warning">
+									<i class="fa-solid fa-wand-magic-sparkles"></i>
+								</h2>
+								<h5 class="text-uppercase mb-4">Web Development</h5>
+								<p class="px-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="card p-5 bg-secondary bg-opacity-30 hover-bg-primary h-100">
+								<h2 class="mb-3 text-warning">
+									<i class="fa-solid fa-sliders"></i>
+								</h2>
+								<h5 class="text-uppercase mb-4">Portfolio Options</h5>
+								<p class="px-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-------------- Portfolio Part -------------->
+			<section id="project">
+				<div class="container-lg text-center my-2">
+					<h6 class="text-primary text-uppercase mb-0">View All</h6>
+					<h1 class="text-uppercase mb-5">My Projects</h1>
+					<div class="row g-2 justify-content-center">
+						<div class="col-sm-6 col-md-4">
+							<div class="card group-hover">
+								<img class="img-fluid h-100" src="./images/11.jpg" alt="Project 1">
+								<div class="card-img-overlay top-auto opacity-0 hover-opacity-100 transition-all duration-500">
+									<a href="" class="btn btn-primary w-100">View</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="card group-hover">
+								<img class="img-fluid h-100" src="./images/22.jpg" alt="Project 1">
+								<div class="card-img-overlay top-auto opacity-0 hover-opacity-100 transition-all duration-500">
+									<a href="" class="btn btn-primary w-100">View</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="card group-hover">
+								<img class="img-fluid h-100" src="./images/33.jpg" alt="Project 1">
+								<div class="card-img-overlay top-auto opacity-0 hover-opacity-100 transition-all duration-500">
+									<a href="" class="btn btn-primary w-100">View</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="card group-hover">
+								<img class="img-fluid h-100" src="./images/33.jpg" alt="Project 1">
+								<div class="card-img-overlay top-auto opacity-0 hover-opacity-100 transition-all duration-500">
+									<a href="" class="btn btn-primary w-100">View</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="card group-hover">
+								<img class="img-fluid h-100" src="./images/11.jpg" alt="Project 1">
+								<div class="card-img-overlay top-auto opacity-0 hover-opacity-100 transition-all duration-500">
+									<a href="" class="btn btn-primary w-100">View</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="card group-hover">
+								<img class="img-fluid h-100" src="./images/22.jpg" alt="Project 1">
+								<div class="card-img-overlay top-auto opacity-0 hover-opacity-100 transition-all duration-500">
+									<a href="" class="btn btn-primary w-100">View</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="card group-hover">
+								<img class="img-fluid h-100" src="./images/22.jpg" alt="Project 1">
+								<div class="card-img-overlay top-auto opacity-0 hover-opacity-100 transition-all duration-500">
+									<a href="" class="btn btn-primary w-100">View</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="card group-hover">
+								<img class="img-fluid h-100" src="./images/33.jpg" alt="Project 1">
+								<div class="card-img-overlay top-auto opacity-0 hover-opacity-100 transition-all duration-500">
+									<a href="" class="btn btn-primary w-100">View</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="card group-hover">
+								<img class="img-fluid h-100" src="./images/11.jpg" alt="Project 1">
+								<div class="card-img-overlay top-auto opacity-0 hover-opacity-100 transition-all duration-500">
+									<a href="" class="btn btn-primary w-100">View</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-------------- Review Part -------------->
+			<section id="review" class="bg-no-repeat bg-size-cover bg-position-center" style="background-image:url(images/7.jpg)">
+				<div class="container-lg text-center text-white text-uppercase">
+					<div class="row">
+						<div class="col-6 col-md-3">
+							<i class="fa-regular fa-lightbulb fa-2x text-warning pb-4"></i>
+							<h3>48</h3>
+							<h6>Project Done</h6>
+						</div>
+						<div class="col-6 col-md-3">
+							<i class="fa-regular fa-heart fa-2x text-warning pb-4"></i>
+							<h3>42</h3>
+							<h6>Satisfied Client</h6>
+						</div>
+						<div class="col-6 col-md-3">
+							<i class="fa-solid fa-wand-magic-sparkles fa-2x text-warning pb-4"></i>
+							<h3>56</h3>
+							<h6>Awards</h6>
+						</div>
+						<div class="col-6 col-md-3">
+							<i class="fa-regular fa-face-smile fa-2x text-warning pb-4"></i>
+							<h3>78</h3>
+							<h6>Happy Clients</h6>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!-------------- Contact Us Part -------------->
+			<section id="contact" class="bg-no-repeat bg-size-cover bg-position-center" style="background-image:url(images/3.2.png)">
+				<div class="container-lg text-center">
+					<h6 class="text-primary text-uppercase mb-0">Find Me</h6>
+					<h1 class="text-uppercase text-white mb-4">Contact Me Now</h1>
+					<form class="row gy-2" name="contactForm" onsubmit="if(confirm('Do you want to send your message?')){if(myValidation() == false){ return false;}}else{event.preventDefault(); return fasle;} ">
+						<div class="col-md-6">
+							<div class="mb-2">
+								<input class="form-control" type="text" name="name" value="" placeholder="Enter Your Name">
+								<span id="name-error"></span>
+							</div>
+							<div class="mb-2">
+								<input class="form-control" type="email" name="email" value="" placeholder="Enter Your Email" >
+								<span id="email-error"></span>
+							</div>
+							<div>
+								<input class="form-control" type="number" name="phone" value="" placeholder="Enter Your Phone" >
+								<span id="phone-error"></span>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<textarea class="form-control h-100" name="message" placeholder="Enter Your Message."></textarea>
+							<span id="message-error"></span>
+						</div>
+						<div class="col-12 my-3">
+							<button type="submit" class="btn btn-primary btn-lg rounded"style="border-radius: 10px;">Submit</button>
+						</div>
+						
+					</form>
+					<div class="row text-white mt-5">
+						<div class="col-sm-4">
+							<i class="fa-solid fa-map-location-dot fa-2x text-warning"></i>
+							<p class="mt-3">Address <br> Mirpur, Dhaka-1216</p>
+						</div>
+						<div class="col-sm-4">
+							<i class="fa-regular fa-envelope fa-2x text-warning"></i>
+							<p class="mt-3">Email <br> mahmud@gmail.com</p>
+						</div>
+						<div class="col-sm-4">
+							<i class="fa-solid fa-mobile-screen-button fa-2x text-warning"></i>
+							<p class="mt-3">Phone <br> 01234567891</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="bg-secondary bg-opacity-30 py-5 py-sm-3">
+			<div class="container-lg">
+				<div class="row align-items-center gy-4">
+					<div class="col-sm text-center text-sm-start order-1 order-sm-0">
+						&copy; 2022 all rights reserved by <span style="color: rgb(9, 89, 211);">Md. Mahmud Hassan</span>
+					</div>
+					<div class="col-sm-auto order-0 order-sm-1">
+						<ul class="nav gap-1 justify-content-center" id="socialLink">
+							<li class="nav-item">
+								<a class="nav-link d-flex justify-content-center align-items-center border border-2 rounded-circle border-secondary btn-outline-warning text-dark" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link d-flex justify-content-center align-items-center border border-2 rounded-circle border-secondary btn-outline-warning text-dark" href="#"><i class="fa-brands fa-twitter"></i></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link d-flex justify-content-center align-items-center border border-2 rounded-circle border-secondary btn-outline-warning text-dark" href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link d-flex justify-content-center align-items-center border border-2 rounded-circle border-secondary btn-outline-warning text-dark" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="btn btn-secondary fixed-bottom start-auto m-2" id="upper">
+					<a href="#main-menu"><i class="fa-solid fa-angles-up text-white"></i></a>
+				</div>
+			</div>
+		</footer>
+		
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script rel="script" src="js/jquery-3.6.0.js"></script>
+		<script rel="script" src="js/custom.js"></script>
+		
+	</body>
+
+</html>
